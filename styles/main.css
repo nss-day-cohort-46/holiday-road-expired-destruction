@@ -1,0 +1,85 @@
+body {
+    margin: auto;
+    background-color: rgb(53, 103, 53);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header {
+    background-color: rgb(58, 99, 48);
+    text-align: center;
+}
+
+.headerLogo {
+    width: 12%;
+}
+
+.navBar {
+    background-color: seagreen;
+    display: flex;
+    justify-content: space-around;
+    padding: 1em 0px;
+}
+
+.dropdownContainer {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0px;
+}
+
+.dropdown {
+    border: 2px dotted white;
+    padding: 15px 90px;
+    margin: 10px 0px;
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.rightContainer {
+    border: 2px dotted white;
+}
+
+.savedAside {
+    border: dotted 2px red;
+    padding: 50px;
+}
+
+
+.leftContainer {
+    border: 2px dotted purple;
+    width: 100%;
+}
+
+.itineraryContainer {
+    border: 2px dotted purple;
+    padding: 90px 0px;
+}
+
+.footerLogo {
+    width: 10%;
+}
+
+.saveButtonContainer {
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.saveButton {
+    border-radius: 6px;
+    border: solid 1px black;
+    font-size: 1em;
+    padding: 7px;
+}
+
+.saveButton:hover {
+    background-color: lightslategray;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    border: dotted 2px lightslategray;
+}
