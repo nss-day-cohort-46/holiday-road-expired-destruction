@@ -2,10 +2,6 @@ import "./AttractionPreview.js"
 
 const eventHub = document.querySelector(".container")
 // const contentTarget = document.querySelector(".attractionContainer")
-
-
-
-
 eventHub.addEventListener("click", event => {
     console.log(event.target.value)
     if (event.target.id.startsWith("attraction--")) {
