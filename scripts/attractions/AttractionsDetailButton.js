@@ -4,9 +4,7 @@ const eventHub = document.querySelector(".container")
 // const contentTarget = document.querySelector(".attractionContainer")
 
 
-export const ShowAttractionsButton = (attraction) => {
-    return `<button id="attraction--${attraction.id}">Details</button> `
-}
+
 
 eventHub.addEventListener("click", event => {
     console.log(event.target.value)
