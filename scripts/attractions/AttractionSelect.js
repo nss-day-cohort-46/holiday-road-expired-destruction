@@ -31,7 +31,7 @@ const render = attractionCollection => {
     <select class="dropdown" id="attractionSelect">
         <option value="0">Please Select an Attraction...</option>
         ${
-            attractionCollection.map(attraction => `<option value="${attraction.name}">${attraction.name}</option>`).join("")
+            attractionCollection.map(attraction => `<option value="${attraction.id}">${attraction.name}</option>`).join("")
         }
     </select>
     `
