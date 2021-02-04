@@ -10,7 +10,7 @@ eventHub.addEventListener("change", changeEvent => {
 
         const attractionSelectedCustomEvent = new CustomEvent("attractionSelected", {
             detail: {
-                selectedAttractionName: selectedAttraction
+                selectedAttractionId: selectedAttraction
             }
         })
 

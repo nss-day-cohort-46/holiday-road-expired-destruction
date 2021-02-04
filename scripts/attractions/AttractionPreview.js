@@ -27,9 +27,12 @@ const contentContainer = document.querySelector(".attractionContainer")
 
 const eventHub = document.querySelector(".container")
 eventHub.addEventListener("attractionSelected", event => {
-    const selectedAttractionId = event.detail.attractionId
+    console.log(event)
+    const selectedAttractionId = event.detail.selectedAttractionId
     const attractionsArray = useAttractions()
-    const selectedAttraction = attractionsArray.find((attraction) => attraction.id === selectedAttractionId)
+    const selectedAttraction = attractionsArray.find((attraction) => attraction.id === parseInt(selectedAttractionId))
+    console.log(selectedAttraction)
+    console.log(selectedAttractionId)
     contentContainer.innerHTML = AttractionsHtml(selectedAttraction)
 })
 
