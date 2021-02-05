@@ -10,4 +10,9 @@ eventHub.addEventListener("eateriesSelected", event => {
     const eateriesArray = useEateries()
     const selectedEatery = eateriesArray.find((eatery) => eatery.id === parseInt(selectedEateryId))
     contentTarget.innerHTML = EateriesHtml(selectedEatery)
+
+    
 })
+
+
+

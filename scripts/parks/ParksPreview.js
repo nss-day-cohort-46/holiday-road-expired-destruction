@@ -3,6 +3,8 @@ import { ParksHtml } from "../parks/Parks.js"
 
 const contentContainer = document.querySelector(".parkContainer")
 
+
+
 const eventHub = document.querySelector(".container")
 eventHub.addEventListener("parkSelected", event => {
     // console.log(event)

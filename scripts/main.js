@@ -9,6 +9,7 @@ import { getEateries, useEateries } from "./eateries/EateryProvider.js"
 import { EaterySelect } from "./eateries/EateriesSelect.js"
 import "./eateries/EateriesPreview.js"
 
+
 AttractionSelect()
 useAttractions()
 getAttractions()
@@ -20,3 +21,5 @@ EaterySelect()
 useEateries()
 getEateries()
 // ShowAttractionsButton()
+
+
