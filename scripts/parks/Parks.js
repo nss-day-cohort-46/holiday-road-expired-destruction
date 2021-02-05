@@ -20,6 +20,12 @@ eventHub.addEventListener("click", event => {
     
             const parksArray = useParks()
             const selectedPark = parksArray.find((park) => park.id === parkId)
+            for (let selectedParkLoop in selectedPark.activities[1].name) {
+                console.log(selectedParkLoop)
+                for (let activitiesLoop of selectedParkLoop) {
+                    console.log(activitiesLoop)
+                }
+            }
             console.log(selectedPark)
             contentTarget.innerHTML = `
             ${detailsWindow(selectedPark)}
