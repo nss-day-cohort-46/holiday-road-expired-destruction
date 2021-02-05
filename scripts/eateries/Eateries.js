@@ -8,3 +8,20 @@ export const EateriesHtml = (eatery) => {
         </section>
     `
 }
+
+const eventHub = document.querySelector(".container")
+
+eventHub.addEventListener("click", event => {
+    // console.log(event)
+    if(event.target.id.startsWith("eatery--")) {
+        const [prefix, eateryId] = event.target.id.split("--") 
+        // console.log(prefix, event)
+        const customEvent = new CustomEvent("EateryButtonClicked", {
+            detail: {
+                eateryId: parseInt(eateryId)
+            }
+        })
+        // console.log(customEvent)
+        eventHub.dispatchEvent(customEvent) 
+    }
+})
