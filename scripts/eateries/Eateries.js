@@ -10,8 +10,8 @@ export const EateriesHtml = (eatery) => {
     `
 }
 
-
 const eventHub = document.querySelector(".container")
+const contentTarget = document.querySelector(".eateryDiv")
 
 eventHub.addEventListener("click", event => {
     // console.log(event)
@@ -20,8 +20,10 @@ eventHub.addEventListener("click", event => {
     
             const eateriesArray = useEateries()
             const selectedEatery = eateriesArray.find((eatery) => eatery.id === parseInt(eateryId))
-     
-            detailsWindow(selectedEatery)
+            contentTarget.innerHTML = `
+            ${detailsWindow(selectedEatery)}
+            `
+            // detailsWindow(selectedEatery)
         // console.log(prefix, event)
         const customEvent = new CustomEvent("EateryButtonClicked", {
             detail: {
@@ -34,13 +36,16 @@ eventHub.addEventListener("click", event => {
 })
 
 const detailsWindow = (eatery) => {
-    window.alert( `
-    Eatery: ${eatery.businessName}
-    City: ${eatery.city}
-    
-    
+    console.log(eatery.ameneties)
+    return `
+    <section class="windowContainerContent">
+    <h2>Eatery: ${eatery.businessName}</h2>
+    <p>City: ${eatery.city}</p> 
+    <p>State: ${eatery.state}</p> 
+    <p>${eatery.description}</p> 
+    <h4>Ameneties:</h4>
+    <p>Restrooms: ${eatery.ameneties.restrooms}</p>
+    <p>Wifi: ${eatery.ameneties.wifi}</p>
+    </section> 
     `
-
-
-    )
 }
