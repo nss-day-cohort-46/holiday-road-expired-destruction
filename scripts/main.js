@@ -10,8 +10,6 @@ import { EaterySelect } from "./eateries/EateriesSelect.js"
 import "./eateries/EateriesPreview.js"
 import { getWeather, useWeather } from "./weather/WeatherProvider.js"
 import "./itinerary/Itinerary.js"
-// import { buttonReveal } from "./itinerary/Itinerary.js"
-
 
 AttractionSelect()
 useAttractions()
@@ -27,4 +25,3 @@ getEateries()
 
 useWeather()
 getWeather ()
-// buttonReveal()
