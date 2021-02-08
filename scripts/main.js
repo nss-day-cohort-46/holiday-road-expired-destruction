@@ -8,6 +8,7 @@ import "./parks/ParksPreview.js"
 import { getEateries, useEateries } from "./eateries/EateryProvider.js"
 import { EaterySelect } from "./eateries/EateriesSelect.js"
 import "./eateries/EateriesPreview.js"
+import { getWeather, useWeather } from "./weather/WeatherProvider.js"
 
 
 AttractionSelect()
@@ -22,4 +23,5 @@ useEateries()
 getEateries()
 // ShowAttractionsButton()
 
-
+useWeather()
+getWeather ()
