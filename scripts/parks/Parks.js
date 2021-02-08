@@ -20,25 +20,19 @@ eventHub.addEventListener("click", event => {
     
             const parksArray = useParks()
             const selectedPark = parksArray.find((park) => park.id === parkId)
-            for (let selectedParkLoop in selectedPark.activities[1].name) {
-                console.log(selectedParkLoop)
-                for (let activitiesLoop of selectedParkLoop) {
-                    console.log(activitiesLoop)
-                }
-            }
-            console.log(selectedPark)
+            // console.log(selectedPark)
             contentTarget.innerHTML = `
             ${detailsWindow(selectedPark)}
             `
             // detailsWindow(selectedpark)
         // console.log(prefix, event)
-        const customEvent = new CustomEvent("ParkButtonClicked", {
-            detail: {
-                parkId: parseInt(parkId)
-            }
-        })
+        // const customEvent = new CustomEvent("ParkButtonClicked", {
+        //     detail: {
+        //         parkId: parseInt(parkId)
+        //     }
+        // })
         // console.log(customEvent)
-        eventHub.dispatchEvent(customEvent) 
+        // eventHub.dispatchEvent(customEvent) 
     }
 })
 
@@ -48,7 +42,9 @@ export const detailsWindow = (park) => {
     <section class="windowContainerContent">
     <h2>Park: ${park.fullName}</h2>
     <p>Description: ${park.description}</p> 
-    <p>Activities: ${park.activities[1]}</p>
+    <p>Activities: ${park.activities.map(activity => {
+        return activity.name
+    }).join(", ")}</p>
     </section> 
     `
 }
