@@ -21,9 +21,9 @@ eventHub.addEventListener("click", event => {
             const parksArray = useParks()
             const selectedPark = parksArray.find((park) => park.id === parkId)
             for (let selectedParkLoop in selectedPark.activities[1].name) {
-                console.log(selectedParkLoop)
+                console.log(selectedParkLoop.toString())
                 for (let activitiesLoop of selectedParkLoop) {
-                    console.log(activitiesLoop)
+                    console.log(activitiesLoop.toString())
                 }
             }
             console.log(selectedPark)
