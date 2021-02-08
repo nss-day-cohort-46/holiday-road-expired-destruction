@@ -5,7 +5,7 @@ export const ParksHtml = (park) => {
         <section class="park">
             <h3 class="park__name">${park.fullName}</h3>
             <div class="park__">${park.states}</div>
-            <button id="park--${park.id}">${park.fullName} Details</button>
+            <button class ="enabledButton" id="park--${park.id}">${park.fullName} Details</button>
         </section>
     `
 }
