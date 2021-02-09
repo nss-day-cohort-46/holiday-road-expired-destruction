@@ -1,0 +1,62 @@
+.itineraryPreviewTitle {
+    text-align: center;
+}
+
+.itineraryPreviewTitle {
+    font-size: 2em;
+}
+
+.leftContainer {
+    border-radius: 20px;
+    margin-left: 15px;
+    padding: 0 10px;
+    text-align: center;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.676);
+}
+
+.detailsButton {
+    padding: 7px;
+    border-radius: 7px;
+    margin-top: 10px;
+}
+
+.previewSelect {
+    text-align: center;
+    width: 100%;
+    padding-bottom: 5px;
+}
+
+.previewDiv {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 5px;
+}
+
+.saveButtonContainer {
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.rightContainer {
+    text-align: center;
+    border: solid 2px rgba(255, 255, 255, 0.532);
+    border-radius: 20px;
+}
+
+.savedAside {
+    padding: 50px;
+}
+
+.saveButton {
+    border-radius: 6px;
+    border: solid 1px black;
+    font-size: 1em;
+    padding: 7px;
+    margin-bottom: 10px;
+}
+
+.saveButton:hover {
+    background-color: lightslategray;
+}

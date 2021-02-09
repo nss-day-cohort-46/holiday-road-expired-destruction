@@ -1,0 +1,14 @@
+.footerLogo {
+    width: 8%;
+    padding: 10px 10px 10px 0;
+}
+
+
+footer {
+    display: flex;
+    color: rgba(255, 255, 255, 0.772);
+    justify-content: space-between;
+    background-color: rgba(52, 52, 52, 0.471);
+    margin-top: 50px;
+    padding: 10px 0 40px 20px;
+}

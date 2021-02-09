@@ -2,10 +2,10 @@ import { useParks } from "./ParkProvider.js"
 
 export const ParksHtml = (park) => {
     return `
-        <section class="park">
+        <section class="park previewSelect">
             <h3 class="park__name">${park.fullName}</h3>
             <div class="park__">${park.states}</div>
-            <button class ="enabledButton" id="park--${park.id}">${park.fullName} Details</button>
+            <button class="detailsButton" id="park--${park.id}">${park.fullName} Details</button>
         </section>
     `
 }
@@ -39,7 +39,7 @@ eventHub.addEventListener("click", event => {
 export const detailsWindow = (park) => {
     // console.log(park)
     return `
-    <section class="windowContainerContent">
+    <section class="windowContainerContent previewSelect">
     <h2>Park: ${park.fullName}</h2>
     <p>Description: ${park.description}</p> 
     <p>Activities: ${park.activities.map(activity => {

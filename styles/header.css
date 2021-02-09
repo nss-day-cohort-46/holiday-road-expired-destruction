@@ -1,0 +1,20 @@
+header {
+    background-color: rgb(52, 52, 52);
+    text-align: center;
+    border-bottom: solid 6px rgb(178, 67, 67);
+}
+
+.headerLogo {
+    width: 12%;
+    padding: 1.5em 0;
+}
+
+.navBar {
+    background-color: rgb(101, 101, 101);
+    border-top: solid .75px black;
+    border-bottom: solid 2px black;
+    display: flex;
+    font-size: 1.25em;
+    justify-content: space-around;
+    padding: .75em 0px;
+}

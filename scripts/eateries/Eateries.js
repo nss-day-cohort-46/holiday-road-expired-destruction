@@ -1,11 +1,11 @@
 import {useEateries} from "./EateryProvider.js"
 export const EateriesHtml = (eatery) => {
     return `
-        <section class="eatery">
+        <section class="eatery previewSelect">
             <h3 class="eatery__name">${eatery.businessName}</h3>
             <div class="eatery__">${eatery.state}</div>
             <div class="eatery__">${eatery.city}</div>
-            <button id="eatery--${eatery.id}">${eatery.businessName} Details</button>
+            <button class="detailsButton" id="eatery--${eatery.id}">${eatery.businessName} Details</button>
         </section>
     `
 }
@@ -38,7 +38,7 @@ eventHub.addEventListener("click", event => {
 const detailsWindow = (eatery) => {
     console.log(eatery.ameneties)
     return `
-    <section class="windowContainerContent">
+    <section class="windowContainerContent previewSelect">
     <h2>Eatery: ${eatery.businessName}</h2>
     <p>City: ${eatery.city}</p> 
     <p>State: ${eatery.state}</p> 

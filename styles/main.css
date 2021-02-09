@@ -1,84 +1,17 @@
+@import './header.css';
+@import './dropdown.css';
+@import './itinerary.css';
+@import './footer.css';
+
 body {
     margin: auto;
-    background-color: rgb(53, 103, 53);
+    color: black;
+    background-image: url("../images/highway-1.jpg");
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-header {
-    background-color: rgb(58, 99, 48);
-    text-align: center;
-}
-
-.headerLogo {
-
-}
-
-.navBar {
-    background-color: seagreen;
-    display: flex;
-    justify-content: space-around;
-    padding: 1em 0px;
-}
-
-.dropdownContainer {
-    display: flex;
-    justify-content: space-around;
-    padding: 10px 0px;
-}
-
-.dropdown {
-    padding: 2px 10px;
-    margin: 10px 0px;
 }
 
 .mainContainer {
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
-}
-
-.itineraryPreviewTitle {
-    text-align: center;
-}
-
-.rightContainer {
-}
-
-.savedAside {
-    padding: 50px;
-}
-
-
-.leftContainer {
-    width: 100%;
-}
-
-.itineraryContainer {
-    /* border: 2px dotted purple; */
-    /* padding: px 0px; */
-}
-
-.footerLogo {
-    
-}
-
-.saveButtonContainer {
-    text-align: center;
-    padding: 10px 0px;
-}
-
-.saveButton {
-    border-radius: 6px;
-    border: solid 1px black;
-    font-size: 1em;
-    padding: 7px;
-}
-
-.saveButton:hover {
-    background-color: lightslategray;
-}
-
-footer {
-    display: flex;
-    justify-content: space-between;
 }
