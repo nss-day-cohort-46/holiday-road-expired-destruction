@@ -7,7 +7,7 @@ import "../parks/ParksPreview.js"
 const contentContainer = document.querySelector(".parkContainer")
 const eventHub = document.querySelector(".container")
 
-
+// may need to use the listener from park select instead, this is from park preview
 eventHub.addEventListener("parkSelected", event => {
     // console.log(event)
     const selectedParkId = event.detail.selectedParkId
