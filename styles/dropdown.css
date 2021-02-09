@@ -1,0 +1,15 @@
+.dropdownContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 18px 0px;
+    padding-left: 6em;
+    margin: 20px;
+}
+
+.dropdownSelect {
+    border-radius: 1em;
+    box-shadow: 3px 2px rgb(52, 52, 52);
+    padding: 12px 10px;
+    width: 85%;
+}

@@ -2,11 +2,11 @@ import { useAttractions } from "./AttractionProvider.js"
 
 export const AttractionsHtml = (attraction) => {
     return `
-        <section class="attraction">
+        <section class="attraction previewSelect">
             <h3 class="attraction__name">${attraction.name}</h3>
             <div class="attraction__">${attraction.state}</div>
             <div class="attraction__">${attraction.city}</div>
-            <button id="attraction--${attraction.id}">${attraction.name} Details</button>
+            <button class="detailsButton" id="attraction--${attraction.id}">${attraction.name} Details</button>
         </section>
     `
 }
@@ -39,7 +39,7 @@ eventHub.addEventListener("click", event => {
 const detailsWindow = (attraction) => {
     console.log(attraction.ameneties)
     return `
-    <section class="windowContainerContent">
+    <section class="windowContainerContent previewSelect">
     <h2>Attraction: ${attraction.name}</h2>
     <p>City: ${attraction.city}</p> 
     <p>State: ${attraction.state}</p> 
